@@ -1,0 +1,103 @@
+:root {
+  --bg-color: #1c1b1a;
+  --card-bg: #262423;
+  --text-main: #deaf9d;
+  --text-sub: #877a73;
+  --accent: #e2b7a4;
+  --font: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.time-container #clock {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+  color: var(--accent);
+}
+
+.time-container #date {
+  font-size: 1rem;
+  color: var(--text-sub);
+  margin-top: 0.5rem;
+}
+
+.focus-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.focus-container label {
+  font-size: 0.85rem;
+  color: var(--text-sub);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.focus-container input {
+  background: var(--card-bg);
+  border: 1px solid transparent;
+  outline: none;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  color: var(--text-main);
+  font-family: var(--font);
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.focus-container input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(226, 183, 164, 0.1);
+}
+
+.shortcuts {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.shortcut-card {
+  background: var(--card-bg);
+  color: var(--text-sub);
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+.shortcut-card:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+  background: #302d2c;
+}

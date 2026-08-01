@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="time-container">
+      <h1 id="clock">00:00</h1>
+      <p id="date">Yükleniyor...</p>
+    </div>
+
+    <div class="focus-container">
+      <label for="focus-input">Günün Odağı</label>
+      <input type="text" id="focus-input" placeholder="Bugün neye odaklanacaksın?" autocomplete="off">
+    </div>
+
+    <div class="shortcuts">
+      <a href="https://github.com" target="_blank" class="shortcut-card">GitHub</a>
+      <a href="https://monkeytype.com" target="_blank" class="shortcut-card">Monkeytype</a>
+      <a href="https://youtube.com" target="_blank" class="shortcut-card">YouTube</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
