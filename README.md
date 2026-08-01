@@ -26,14 +26,14 @@ git clone [https://github.com/CartiSarper/focus-dashboard.git](https://github.co
 cd focus-dashboard
 
 
-2. Run Locally
+### 2. Run Locally
 You can run a quick local server using Python:
 
 Bash
 python3 -m http.server 8000
 Then open your browser and visit: http://localhost:8000
 
-Element,Color Code
+### Element,Color Code
 Background,#1c1b1a
 Cards / Inputs,#262423
 Accent Text,#e2b7a4
